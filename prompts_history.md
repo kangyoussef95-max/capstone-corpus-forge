@@ -1,3 +1,6 @@
 ### 15-05-2026 10:34
-- **Prompt**: test pro,pt history and journql zorks
+
+
+### 15-05-2026 10:49
+- **Prompt**: activate the journal and prompt history
 
