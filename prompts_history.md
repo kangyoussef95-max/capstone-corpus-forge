@@ -4,3 +4,6 @@
 ### 15-05-2026 10:56
 - **Prompt**: test activation of logging scripts
 
+### 22-05-2026 10:17
+- **Prompt**: hey can you implement stubbs adn to do function but not resolve them for this project
+
