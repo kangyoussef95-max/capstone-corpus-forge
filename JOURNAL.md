@@ -79,3 +79,8 @@
 - **Hook Version**: 1.02
 - **Date**: 22-05-2026 23:51
 - **Prompt**: so am i supposed to use an api or what like waht does the pdf say about taht about the whole ai thing am i supmposed to use an api wiht billing or what
+
+### **New Interaction**
+- **Hook Version**: 1.02
+- **Date**: 23-05-2026 00:02
+- **Prompt**: can you update the requirements , README and the gitignore for the project ,
