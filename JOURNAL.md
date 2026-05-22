@@ -64,3 +64,8 @@
 - **Hook Version**: 1.02
 - **Date**: 22-05-2026 23:47
 - **Prompt**: No  I want to use th e API cuz when i logged an api key in a ask no rag and ask rag code it worked fine
+
+### **New Interaction**
+- **Hook Version**: 1.02
+- **Date**: 22-05-2026 23:48
+- **Prompt**: Check the pdf and tell me what is needed in this project ai wise
