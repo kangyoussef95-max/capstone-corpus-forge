@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm ingestion.py corpus_manager.py retrieval.py ai_workflows.py prompt_steering.py persistence.py cost_tracker.py)",
+      "Bash(rm -rf static tests)",
+      "Bash(rm templates/corpus.html templates/chat.html templates/flashcards.html templates/quiz.html templates/code_analysis.html templates/dashboard.html)",
+      "Bash(rm docs/architecture_report.md docs/code_explorer_report.md docs/flashcards_output.md)"
+    ]
+  }
+}
