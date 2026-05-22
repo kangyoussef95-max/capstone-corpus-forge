@@ -59,3 +59,8 @@
 - **Hook Version**: 1.02
 - **Date**: 22-05-2026 23:45
 - **Prompt**: What do i need to do though cuz i dont want to spend money or log my credit card for anything
+
+### **New Interaction**
+- **Hook Version**: 1.02
+- **Date**: 22-05-2026 23:47
+- **Prompt**: No  I want to use th e API cuz when i logged an api key in a ask no rag and ask rag code it worked fine
