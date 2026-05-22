@@ -10,3 +10,6 @@
 ### 22-05-2026 11:05
 - **Prompt**: Try Again
 
+### 22-05-2026 23:39
+- **Prompt**: hey the web app doesnt work ; can you try to see wahts wrong with it
+
