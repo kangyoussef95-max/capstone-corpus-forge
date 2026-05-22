@@ -25,3 +25,6 @@
 ### 22-05-2026 23:48
 - **Prompt**: Check the pdf and tell me what is needed in this project ai wise
 
+### 22-05-2026 23:51
+- **Prompt**: so am i supposed to use an api or what
+
