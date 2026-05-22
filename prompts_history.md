@@ -16,3 +16,6 @@
 ### 22-05-2026 23:42
 - **Prompt**: the web site loads but when i try to use one of the options like the flashcards or the quiz or the revieww or even the chat efunction it displays an error
 
+### 22-05-2026 23:45
+- **Prompt**: What do i need to do though cuz i dont want to spend money or log my credit card for anything
+
