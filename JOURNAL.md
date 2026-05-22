@@ -38,3 +38,8 @@
 - **Hook Version**: 1.02
 - **Date**: 22-05-2026 23:39
 - **Prompt**: hey the web app doesnt work ; can you try to see wahts wrong with it
+
+### **New Interaction**
+- **Hook Version**: 1.02
+- **Date**: 22-05-2026 23:42
+- **Prompt**: the web site loads but when i try to use one of the options like the flashcards or the quiz or the revieww or even the chat efunction it displays an error
