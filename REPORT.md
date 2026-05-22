@@ -1,8 +1,8 @@
 # Project Report
 
 #### The Team members
-
-* Names, epita email addresses, and GitHub usernames of all team members.
+Name: Youssef Kang Epita Email: youssef.kang@epita.fr Github Username: kangyoussef95-max
+Name: Quang phuc Hoang Epita Email: quang-phuc.hoang@epita.fr Github Username: GaudiumX
 
 ---
 
