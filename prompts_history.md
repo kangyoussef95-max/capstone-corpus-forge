@@ -58,3 +58,6 @@
 ### 26-05-2026 00:10
 - **Prompt**: but that doesnt change anything ; i just put in a new key
 
+### 26-05-2026 00:14
+- **Prompt**: that aside ; is everything else fixed and operational ?
+
