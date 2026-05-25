@@ -52,3 +52,6 @@
 ### 26-05-2026 00:09
 - **Prompt**: why tho the key works fine theres no use revokingit wiht a new one ; no one can see it
 
+### 26-05-2026 00:09
+- **Prompt**: whats rotation
+
