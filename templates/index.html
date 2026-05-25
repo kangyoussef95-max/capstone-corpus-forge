@@ -490,6 +490,10 @@ function toast(msg, isError = false) {
   setTimeout(() => t.remove(), 3500);
 }
 
+function escAttr(t) {
+  return String(t).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
 async function api(method, url, body) {
   const opts = { method, headers: {} };
   if (body !== undefined) {
@@ -538,8 +542,8 @@ async function loadDocs() {
   list.innerHTML = documents.map(d => `
     <div class="doc-item ${d.is_active ? 'active' : ''}" id="doc-${d.id}">
       <button class="toggle-btn ${d.is_active ? 'on' : ''}" onclick="toggleDoc(${d.id})" title="Toggle active"></button>
-      <span class="doc-name" title="${d.filename}">${d.filename}</span>
-      <span class="doc-type">${d.filetype}</span>
+      <span class="doc-name" title="${escAttr(d.filename)}">${escHtml(d.filename)}</span>
+      <span class="doc-type">${escHtml(d.filetype)}</span>
       <button class="btn btn-danger btn-sm" onclick="deleteDoc(${d.id})">✕</button>
     </div>
   `).join('');

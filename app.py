@@ -14,13 +14,20 @@ import fitz  # PyMuPDF
 from groq import Groq
 from flask import Flask, jsonify, render_template, request, session
 
-_ai = Groq(api_key=os.environ.get("GROQ_API_KEY", ""))
+# Initialize Groq client only when an API key is present
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
+if GROQ_API_KEY:
+    _ai = Groq(api_key=GROQ_API_KEY)
+else:
+    _ai = None
 
 BASE_DIR = Path(__file__).resolve().parent
 DATABASE_PATH = BASE_DIR / "corpus.db"
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = "dev-only-secret"
+app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY", "dev-only-secret")
+# Limit uploads to a reasonable size (5 MB)
+app.config["MAX_CONTENT_LENGTH"] = 5 * 1024 * 1024  # 5 MB
 
 
 @app.errorhandler(Exception)
@@ -133,6 +140,9 @@ def build_system_prompt(settings: dict[str, str]) -> str:
 # ---------------------------------------------------------------------------
 
 def call_ai(system: str, user: str, workflow: str, temperature: float = 0.7) -> str:
+    if _ai is None:
+        raise RuntimeError("GROQ_API_KEY is not configured. Set GROQ_API_KEY in the environment to enable AI calls.")
+
     resp = _ai.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[
