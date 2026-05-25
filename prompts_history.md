@@ -34,3 +34,6 @@
 ### 23-05-2026 00:02
 - **Prompt**: can you update the requirements , README and the gitignore for the project ,
 
+### 26-05-2026 00:01
+- **Prompt**: can you reveiw teh project and check for any bugs or problems
+
