@@ -46,3 +46,6 @@
 ### 26-05-2026 00:05
 - **Prompt**: fix it
 
+### 26-05-2026 00:08
+- **Prompt**: kay waut why wouldi revoke the api it doesnt get commited anyways$
+

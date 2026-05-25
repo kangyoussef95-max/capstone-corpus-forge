@@ -97,6 +97,21 @@
 
 ### **New Interaction**
 - **Agent Version**: GPT-5 mini
+- **Date**: 26-05-2026 00:20
+- **User**: $USER
+- **Prompt**: fix it
+- **CoPilot Mode**: Edit
+- **CoPilot Model**: GPT-5 mini
+- **Socratic Mode**: ON
+- **Changes Made**: Applied several safe hardening and portability fixes:
+	- `app.py`: load `SECRET_KEY` from environment, add `MAX_CONTENT_LENGTH` (5 MB), initialize Groq client only when `GROQ_API_KEY` is present, and raise a clear error if AI calls are attempted without a key.
+	- `templates/index.html`: escaped document filenames and attribute values to reduce XSS risk by adding `escAttr()` and using `escHtml()` where appropriate.
+	- `tools/log_prompt.ps1`: improved Python resolver to prefer the project's venv Python, then `python3`, then `python`.
+	- Added `requirements.txt` (copied entries from existing `requirements` file) for standard tooling compatibility.
+- **Context and Reasons for Changes**: The repository scan found exposed secrets, hardcoded keys, potential XSS injection points, and a nonstandard requirements filename. These edits are minimal, reduce immediate risks, and improve portability without changing core behavior.
+
+### **New Interaction**
+- **Agent Version**: GPT-5 mini
 - **Date**: 26-05-2026 00:10
 - **User**: $USER
 - **Prompt**: can you reveiw teh project and check for any bugs or problems
@@ -115,3 +130,8 @@
 - **Hook Version**: 1.02
 - **Date**: 26-05-2026 00:05
 - **Prompt**: fix it
+
+### **New Interaction**
+- **Hook Version**: 1.02
+- **Date**: 26-05-2026 00:08
+- **Prompt**: kay waut why wouldi revoke the api it doesnt get commited anyways$
