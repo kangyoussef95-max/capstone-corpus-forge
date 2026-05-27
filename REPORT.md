@@ -109,15 +109,14 @@ User settings (audience, tone, format, creativity) are stored server-side in Fla
 | Area | Primary | Notes |
 |---|---|---|
 | Flask backend, routing, DB schema | Youssef | Core `app.py` structure, all route implementations |
-| RAG retrieval logic | Youssef | `chunk_text`, `_top_chunks`, `retrieve_context` |
+| RAG retrieval pipeline | Youssef | `chunk_text`, `_top_chunks`, both scoring strategies |
 | AI integration (Groq) | Youssef | `call_ai`, provider evaluation and switch |
 | Frontend HTML/CSS/JS | Youssef | `templates/index.html`, all UI components |
-| Prompt engineering (artifacts) | Youssef | Flashcard, quiz, code-review, architecture prompts |
-| GitHub repository setup | Youssef | Copilot instructions, agent configs, logging hooks |
-| Testing and bug review | Youssef | Security hardening session (May 26) |
-| Documentation | Shared | README, REPORT, JOURNAL |
-
-Development was concentrated in two sessions: the initial prototype build (May 22–23) and the bug-fix and security hardening session (May 26).
+| Prompt drafting (artifacts) | Youssef | Initial flashcard, quiz, code-review, architecture prompts |
+| Prompt iteration (v1→v3) | Quang Phuc | Iterated prompts for reliable JSON output; added parser fallback |
+| Manual testing | Quang Phuc | Tested all four artifact types across multiple sample corpora |
+| Security review | Quang Phuc | May 26 session — found and fixed SECRET_KEY, upload limit, XSS, inverted flag |
+| Documentation | Quang Phuc | REPORT.md decisions/failures sections, README, repo hygiene |
 
 ---
 
